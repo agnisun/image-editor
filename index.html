@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="menu">
+        <div class="menu__top">
+          <div class="menu__options">
+            <button id="menu-button" class="button">
+              <div class="button__icon">
+                <img src="src/images/icons/menu.png" alt=""/>
+              </div>
+            </button>
+            <div id="menu-dropdown" class="menu__options-dropdown hide">
+              <div class="menu__options-dropdown__list">
+                <label class="menu__options-dropdown__item" data-label="open">
+                  <div class="menu__options-dropdown__image">
+                    <img src="src/images/icons/folder.png" alt=""/>
+                  </div>
+                  <div class="menu__options-dropdown__text">Open</div>
+                  <input type="file" accept='.jpg,.jpeg,.png,.webp' hidden/>
+                </label>
+                <button class="menu__options-dropdown__item" data-label="download">
+                  <div class="menu__options-dropdown__image">
+                    <img src="src/images/icons/download.png" alt=""/>
+                  </div>
+                  <div class="menu__options-dropdown__text">Download</div>
+                </button>
+              </div>
+              <div class="menu__options-dropdown__list">
+                <a href="https://github.com/agnisun/image-editor" target="_blank" class="menu__options-dropdown__item">
+                  <div class="menu__options-dropdown__image">
+                    <img src="src/images/icons/github.png" alt=""/>
+                  </div>
+                  <div class="menu__options-dropdown__text">
+                    Github
+                  </div>
+                </a>
+                <a href="https://discord.gg/dXdNB4Sq" target="_blank" class="menu__options-dropdown__item">
+                  <div class="menu__options-dropdown__image">
+                    <img src="src/images/icons/discord.png" alt=""/>
+                  </div>
+                  <div class="menu__options-dropdown__text">
+                    Discord
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <section id="menu-state" class="menu__state">
+            <button class="button" data-drawstate="default">
+              <div class="button__icon">
+                <img src="src/images/icons/default.png" alt=""/>
+              </div>
+            </button>
+            <button class="button" data-drawstate="grab">
+              <div class="button__icon">
+                <img src="src/images/icons/grab.png" alt=""/>
+              </div>
+            </button>
+            <button class="button" data-drawstate="draw">
+              <div class="button__icon">
+                <img src="src/images/icons/draw.png" alt=""/>
+              </div>
+            </button>
+            <button class="button" data-drawstate="crop">
+              <div class="button__icon">
+                <img src="src/images/icons/crop.png" alt=""/>
+              </div>
+            </button>
+            <button class="button" data-drawstate="zoom">
+              <div class="button__icon">
+                <img src="src/images/icons/zoom.png" alt=""/>
+              </div>
+            </button>
+            <button class="button" data-drawstate="pipette">
+              <div class="button__icon">
+                <img src="src/images/icons/pipette.png" alt=""/>
+              </div>
+            </button>
+          </sectionc>
+        </div>
+        <div id="menu-panel" class="menu__panel hide">
+        </div>
+      </div>
+      <canvas id="canvas"></canvas>
+      <canvas width="40" height="40" id="canvas-draw"></canvas>
+      <canvas width="24" height="24" id="canvas-pipette"></canvas>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
