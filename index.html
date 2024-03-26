@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/image-editor/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <script type="module" crossorigin src="/image-editor/assets/index-MTr_aUzZ.js"></script>
+    <link rel="stylesheet" crossorigin href="/image-editor/assets/index-Br8kyU8P.css">
+  </head>
+  <body>
+    <div id="app">
+      <div class="menu">
+        <div class="menu__top">
+          <div class="menu__options">
+            <button id="menu-button" class="button">
+              <div class="button__icon">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAAdgAAAHYBTnsmCAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAABTSURBVDiNzc7BCYAwFETBicQuxIvgye5sw0bswjoEkdThxR5+BPPusyx/l7BjCvor48AdHChB11IJG8agLx2eigM1tpUSVsxBf2YsGIIDfdB92AtF/Ql4+SR/HAAAAABJRU5ErkJggg==" alt=""/>
+              </div>
+            </button>
+            <div id="menu-dropdown" class="menu__options-dropdown hide">
+              <div class="menu__options-dropdown__list">
+                <label class="menu__options-dropdown__item" data-label="open">
+                  <div class="menu__options-dropdown__image">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAAWQAAAFkBqp2phgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAEBSURBVDiNpdO9LoRBFMbx30l87TYkopEgItlkK3EFrkhCp1OpVFsobELvGiRuQCE+KqKgkiishoYchVlZ8uLdOMkUc2ae/3nOTE5kpv9EYBLtgdwrTjPzrS7gBtcDuVFMYDUzX+sAepk59SUZcVCcHFdonnDUh/8EaGIDcxWAFXQzcx9Gqmxl5jO2Ky1HbGKmvx/5djhWKkSVuMRcubucmWefLUTEAg7R+0U8GON4UACwh7XMVGdhCedRKrZxglbp/8+IiH1cKIAdbA1RfRF3aMAL7jE9BKCL9f4YJDpDiOdxi0ZmClwVF481X38Wu5nZ4eO/m2jVFMMbLrPYif+O8zvxstd5FDpOiAAAAABJRU5ErkJggg==" alt=""/>
+                  </div>
+                  <div class="menu__options-dropdown__text">Open</div>
+                  <input type="file" accept='.jpg,.jpeg,.png,.webp' hidden/>
+                </label>
+                <button class="menu__options-dropdown__item" data-label="download">
+                  <div class="menu__options-dropdown__image">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAAdgAAAHYBTnsmCAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAACJSURBVDiNY2AY7EAPinECFgIGBEHpS7gUMJHoopFkQCQDAwMnEp+TgYEhjZABsUhsZwYGhiMMDAxyUHyEgYHBEodaOPiPxk9jYGD4xcDA8JuBgaGcgFqcgtZQjFMtI5LgbQYGhs0MDAwvsZmOBMQZGBh8GBgY1BgYUFOiJwMk8AQJGPAOqnaQAADkghGPuyJTRQAAAABJRU5ErkJggg==" alt=""/>
+                  </div>
+                  <div class="menu__options-dropdown__text">Download</div>
+                </button>
+              </div>
+              <div class="menu__options-dropdown__list">
+                <a href="https://github.com/agnisun/image-editor" target="_blank" class="menu__options-dropdown__item">
+                  <div class="menu__options-dropdown__image">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAAbwAAAG8B8aLcQwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAFASURBVDiNjZMxS8NgEIafS5a2YJ0Kbo0luLh2cC/9E/U/ZBLcnZwEHV3c3FxKBpcuHcRBpKCjg7OTokWK4Dn0vnr5NOLBkePuvSf5Xr6IquJDRHJgBPQtAW4sz1X1obKgqhhEgAKYA1qTc9PIas8tl38sxlkGSAAUbrgHXFn9bKnAHbDvdEU4fu4++xNIbbDmjrduz9Q04Th5Yoa1zJI3IDFvXp1PL1YmwJPVLWCUOKcBzlT1g5qw2ZFr9WPAdd2yi9sYkLpG5x+AzNUpwIRvZ++BRjAvTqBhmqCfJMDMETeBsYgMRERCU5YxAMbAttPPAHrAwohbwKnVB+7Nh/y8TAugFwQn1nxkaeousOEAO78Ajv1NbANTG7wDF0DHAbJoeQq0VwATNan+D1kNoASalZ8pcnoIXAJd1+tabxjrvwCg9/XBJUyLnwAAAABJRU5ErkJggg==" alt=""/>
+                  </div>
+                  <div class="menu__options-dropdown__text">
+                    Github
+                  </div>
+                </a>
+                <a href="https://discord.gg/dXdNB4Sq" target="_blank" class="menu__options-dropdown__item">
+                  <div class="menu__options-dropdown__image">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAB2AAAAdgFOeyYIAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAThJREFUOI2N08suREEQBuAPgzVWFiKxkbi8i8tK4g1ISHgMxGRcHkI8weAFCIlhg7iGsJG4LIexOHXojDFRyZ/T/VfV3111qvltoyjiBO+BE6xipEH8t3ViAx+o/YEq1tDRKHmvSWI9dutFNhPnJ/ZxnHDHOAhfzpXSmvNrX2Ag+B4MBnqCG8B5Us6waE6uOtmsSWFjSfwKnMbmEi3/EGjBVeRUWtEXju0gYQ5LieAS5mNdi1joh9cgp5JTHoPrRlesnxL/dHAvBdxhCPdJwAx68Rz72TqBh/jeFlAOgUKQ7bJfdpMkrMd1C7LutwVfJhvPKq4xHnUv4hBbgSMshG8ixKtxMLLxzH/NmZ8up7j0MwM12Xv5tg7sNEj6C+UoVb1IKa7W7DEVGyWnNiybsAreAhUspzXn9gXiJIBMCzrjtgAAAABJRU5ErkJggg==" alt=""/>
+                  </div>
+                  <div class="menu__options-dropdown__text">
+                    Discord
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <section id="menu-state" class="menu__state">
+            <button class="button" data-drawstate="default">
+              <div class="button__icon">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAdhAAAHYQGVw7i2AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAQ5JREFUOI2l0r8rxVEYx/GXbsRCuhub8iMpZbmLUgyGW8pVLBaSTVL+AP/CHVhlMDFYDDKgLLLILIOfiZKUxWI4R92+fc/tyqdOp+d5znmf58fhnyrEfQ2HGEMTbvH9F9AXejCNfbxhF2U0NwI4QaXG7sACjvGCTYzG7HK1jL1ErBjj57hDFSPZQ534iC/XUx82cIOtbPAgpt2IevGcdc4KNadUxBKO8In17IE2vKMr53JLvHSBebSnXtkR/kSeKnjEUJ0sTeKyxu7GA0rRnsE9BlOAgtCc/miv4AqvOZCBFKQqjApOMRVXLWQRZylASZjzsNDU1uj/hUxgDtcpAGzHUlYz/jKehL6M1wM0rB84wTQWNzrJYgAAAABJRU5ErkJggg==" alt=""/>
+              </div>
+            </button>
+            <button class="button" data-drawstate="grab">
+              <div class="button__icon">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAAbwAAAG8B8aLcQwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAFXSURBVDiNldMxaxRxEAXw31zOwigHCZIQSSBop020EgsFsQiksfYjpBCLfAcbC5uUNuliaxtFEESQYCBoJSiIieA1UasUGYubhXU9STIw7Ozjvbc7//mPzNRNnMMSdiqXcH4styM8i9f4ggPcrTwobBvTmG80PX/HPbzJzEUM8alyWNhWGT2LiHX8YzCL/ap/tPCm3seTzLyJ2xEx3YOImI2INdxoiY462WDDqn9j0PT+Dmv4gIeFLbTOZqGeAwyqfovFfkRcRC8zH0dE8yWZ+bVbZ+bPTsv6+I6Zev/WJRwX/cw8iojPEXEpMzdPa9BMYdvospwmzuCwMXiJ+ydVRsQELmTmXg8y8zlmIuLWCT2uYVeJm1FdN2plctydb/ECr7A8bhdWjeY79x/xBB7h6dhlKtIKPuIBrhY2heUyX2//ZRShe0iXjRbrDq7gF95jIzNftLl/AGlG8Y8bBYOeAAAAAElFTkSuQmCC" alt=""/>
+              </div>
+            </button>
+            <button class="button" data-drawstate="draw">
+              <div class="button__icon">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAB2AAAAdgFOeyYIAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAANJJREFUOI210zFLglEUxvEfhb1u4RcwHBz6FI4tQWPuOfVRAnFykD5FIK9QY1M0RlNCiyBYUwi6GA2e4YWM975CBy6X81z+z3k4cKlWLTxgGffJQQW4jUd84xI13FaBZxgjC+0cX/vCGe7j7AWPQ2+lwBPUQzvCHeY4/TcYXpH/EbtdBtexwUUVuIEBrqIf4SNM8jL4EM94Q6egjSLJS1nsM6zR3PGW7dB+1dB228XqoJcCwzuuC30TU/RTDT5xEyYTrPCE41SDLhYxdWi7k+Rf+gPSQzNuzHHlOAAAAABJRU5ErkJggg==" alt=""/>
+              </div>
+            </button>
+            <button class="button" data-drawstate="crop">
+              <div class="button__icon">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAB2AAAAdgFOeyYIAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAJZJREFUOI3t0j0OQUEUhuGHaFApKLQWYB0qtYZF2ItEJdHahIZGryU3IlGp1BTmxkTict1C423OfOfny2TO8KCHhZyUo3ML7SIGX1HBGE3sQm6A7pu5CZLUoIYG9qFYD/oVfWwxfy6MsPrg1msMU1H4Df4G9zXGdDDN6N+EWA19h9hgiRlKGQaXEK84RzoXv/8HR5xScQNb9RUMYyWnrAAAAABJRU5ErkJggg==" alt=""/>
+              </div>
+            </button>
+            <button class="button" data-drawstate="zoom">
+              <div class="button__icon">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAAbwAAAG8B8aLcQwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAE7SURBVDiNldKxSpxREAXg74iFbG1hCMEnsLPZJmwpaZLCypeIEN/Acos1la3lFkm32EhCQAxWqRQrmxBSKZgHiDfF3pWf60/QgYE7d86ZmXPnKqVYOEY4wgX+4BRjrHVxXV+CJIMkh/iKl/iMPfzAO1wm2dFntfMh7rDddsAKJrjHqCdvVJOPyA1wimsM2gJHOOkhjJt4FX+x1b7BJr73qHvVSL3BVcU/2FIF/lpcJBknmWKYZJpku4P/ifW20yk+9mnuufuND62Ec7xJstIU/tQNkgzxAmftBGu4xeQ/GxhU/bNHuQrYMV/lFKsNeVjJBfu9BTrf+Np8VRc4rpoLZtiv591ugeXOmr4l2cDruqp1fMFZKeW8vsMtJkmUUg4WxGc5druTPEzwVCulHCRRJ7nP4j8/15K8x9t/a+xLdhRdKasAAAAASUVORK5CYII=" alt=""/>
+              </div>
+            </button>
+            <button class="button" data-drawstate="pipette">
+              <div class="button__icon">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAB2AAAAdgFOeyYIAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAMpJREFUOI2l0KFOglEYBuAHfoqDDcFuwDtws7kBweIIStN7MDubF2DBKJU5OxMkW3TMe2EEozPwWZzuP2e85ZzyfN97TiE/TfSwxmc1E7cxwT4esVdLhDfYQQu3+EAFRym4ggUusEQVh3jBbkqDM3yhjzu84w2XWBUl+Bynsb2GE5u3NzAv2zzEQ1QW5xwzXKfg8S88jkal+WtzMh78g4cpGKbb4AOM4l7k4jqecYz7aDJIxQWecBVDOqnwJ128xpB6LmbzWd1okp1vXZoiggwPzB4AAAAASUVORK5CYII=" alt=""/>
+              </div>
+            </button>
+          </sectionc>
+        </div>
+        <div id="menu-panel" class="menu__panel hide">
+        </div>
+      </div>
+      <canvas id="canvas"></canvas>
+      <canvas width="40" height="40" id="canvas-draw"></canvas>
+      <canvas width="24" height="24" id="canvas-pipette"></canvas>
+    </div>
+  </body>
+</html>
